@@ -1,0 +1,23 @@
+.wallet-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: rgb(138, 221, 83);
+}
+
+.wallet-item-price {
+  font-size: 24px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 8px;
+}
+
+.wallet-item-date {
+  font-size: 24px;
+}
