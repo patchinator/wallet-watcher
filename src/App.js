@@ -1,7 +1,6 @@
 import './App.css';
 import Wallets from './components/wallets/Wallets';
 import NewWallet from './components/NewWallet/NewWallet';
-import WalletItem from './components/wallets/WalletItem';
 
 const App = () => {
   const newItem = [
