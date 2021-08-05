@@ -1,5 +1,5 @@
 import './App.css';
-import WalletItem from './components/WalletItem';
+import Wallets from './components/Wallets';
 
 const App = () => {
   const newItem = [
@@ -28,28 +28,9 @@ const App = () => {
   return (
     <div className="App">
       <h2>My wallet</h2>
-      <WalletItem
-        title={newItem[0].title}
-        amount={newItem[0].amount}
-        date={newItem[0].date}
-      ></WalletItem>
-      <WalletItem
-        title={newItem[1].title}
-        amount={newItem[1].amount}
-        date={newItem[1].date}
-      ></WalletItem>
-      <WalletItem
-        title={newItem[2].title}
-        amount={newItem[2].amount}
-        date={newItem[2].date}
-      ></WalletItem>
-      <WalletItem
-        title={newItem[3].title}
-        amount={newItem[3].amount}
-        date={newItem[3].date}
-      ></WalletItem>
+      <Wallets newItem={newItem}/>
     </div>
-  );
-}
+  )
+};
 
 export default App;
