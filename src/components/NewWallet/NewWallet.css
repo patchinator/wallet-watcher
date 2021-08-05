@@ -1,0 +1,21 @@
+.new-wallet {
+  text-align: center;
+  padding: 20px;
+  margin: 40px auto;
+  background-color: rgb(255,246,242);
+  width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-wallet button {
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(112, 255, 112);
+}
+
+.new-wallet button:hover {
+  background-color: rgb(174, 255, 174);
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import WalletItem from './WalletItem';
 import './Wallets.css';
-import Card from './Card';
+import Card from '../UI/Card';
 
 const Wallets = (props) => {
   return (

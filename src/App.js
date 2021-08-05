@@ -1,5 +1,6 @@
 import './App.css';
-import Wallets from './components/Wallets';
+import Wallets from './components/wallets/Wallets';
+import NewWallet from './components/NewWallet/NewWallet';
 
 const App = () => {
   const newItem = [
@@ -27,7 +28,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h2>My wallet</h2>
+      <NewWallet />
       <Wallets newItem={newItem}/>
     </div>
   )
