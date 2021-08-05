@@ -1,6 +1,7 @@
 import './App.css';
 import Wallets from './components/wallets/Wallets';
 import NewWallet from './components/NewWallet/NewWallet';
+import WalletItem from './components/wallets/WalletItem';
 
 const App = () => {
   const newItem = [
@@ -24,11 +25,16 @@ const App = () => {
       amount: 4.45,
       date: new Date(2021, 7, 10)}
   ];
+
+  const addWalletHandler = (wallet) => {
+    console.log('in app.js')
+    console.log(wallet);
+  };
   
 
   return (
     <div className="App">
-      <NewWallet />
+      <NewWallet onAddWallet={addWalletHandler} />
       <Wallets newItem={newItem}/>
     </div>
   )
