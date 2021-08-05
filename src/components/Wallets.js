@@ -1,10 +1,11 @@
 import React from 'react';
 import WalletItem from './WalletItem';
 import './Wallets.css';
+import Card from './Card';
 
 const Wallets = (props) => {
   return (
-    <div className={'wallets'}>
+    <Card className={'wallets'}>
       <WalletItem
         title={props.newItem[0].title}
         amount={props.newItem[0].amount}
@@ -25,7 +26,7 @@ const Wallets = (props) => {
         amount={props.newItem[3].amount}
         date={props.newItem[3].date}
       ></WalletItem>
-    </div>
+    </Card>
   );
 };
 

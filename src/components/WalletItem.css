@@ -2,11 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 12px;
   margin: 8px;
-  border-radius: 12px;
-  background-color: #f0f0f0;
+  background-color: #ffc786;
 }
 
 .wallet-item-price {
