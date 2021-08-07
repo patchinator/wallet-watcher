@@ -39,7 +39,8 @@ const WalletForm = (props) => {
           <input
             type="text"
             value={enteredTitle}
-            onChange={titleChangeHandler} />
+            onChange={titleChangeHandler}
+          />
         </div>
         <div className={"new-wallet-control"}>
           <label>Amount</label>
@@ -63,6 +64,9 @@ const WalletForm = (props) => {
         </div>
       </div>
       <div>
+        <button onClick={props.onCancel} id="cancel-button">
+          X
+        </button>
         <button type="submit">Add item</button>
       </div>
     </form>

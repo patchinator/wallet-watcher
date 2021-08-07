@@ -21,14 +21,18 @@ const Wallets = (props) => {
           selected={filterYear}
           onFilterChange={filterChangeHandler}
         />
-        {filteredWallets.map((wallet) => (
-          <WalletItem
-            key={wallet.id}
-            title={wallet.title}
-            date={wallet.date}
-            amount={wallet.amount}
-          />
-        ))}
+        {filteredWallets.length === 0 ? (
+          <p>No items found.</p>
+        ) : (
+          filteredWallets.map((wallet) => (
+            <WalletItem
+              key={wallet.id}
+              title={wallet.title}
+              date={wallet.date}
+              amount={wallet.amount}
+            />
+          ))
+        )}
       </Card>
     </div>
   );
