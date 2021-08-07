@@ -13,27 +13,17 @@ const Wallets = (props) => {
   return (
     <div>
       <Card className={"wallets"}>
-        <WalletFilter selected={filterYear} onFilterChange={filterChangeHandler}></WalletFilter>
+        <WalletFilter
+          selected={filterYear}
+          onFilterChange={filterChangeHandler}
+        />
+        {props.newItem.map((wallet) => (
         <WalletItem
-          title={props.newItem[0].title}
-          amount={props.newItem[0].amount}
-          date={props.newItem[0].date}
-        ></WalletItem>
-        <WalletItem
-          title={props.newItem[1].title}
-          amount={props.newItem[1].amount}
-          date={props.newItem[1].date}
-        ></WalletItem>
-        <WalletItem
-          title={props.newItem[2].title}
-          amount={props.newItem[2].amount}
-          date={props.newItem[2].date}
-        ></WalletItem>
-        <WalletItem
-          title={props.newItem[3].title}
-          amount={props.newItem[3].amount}
-          date={props.newItem[3].date}
-        ></WalletItem>
+          title={wallet.title}
+          date={wallet.date}
+          amount={wallet.amount}
+        />
+        ))}
       </Card>
     </div>
   );
