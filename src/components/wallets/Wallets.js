@@ -10,6 +10,10 @@ const Wallets = (props) => {
     setFilterYear(selectedYear);
   };
 
+  const filteredWallets = props.newItem.filter(walletItem => {
+    return walletItem.date.getFullYear().toString() === filterYear;
+  });
+
   return (
     <div>
       <Card className={"wallets"}>
@@ -17,12 +21,13 @@ const Wallets = (props) => {
           selected={filterYear}
           onFilterChange={filterChangeHandler}
         />
-        {props.newItem.map((wallet) => (
-        <WalletItem
-          title={wallet.title}
-          date={wallet.date}
-          amount={wallet.amount}
-        />
+        {filteredWallets.map((wallet) => (
+          <WalletItem
+            key={wallet.id}
+            title={wallet.title}
+            date={wallet.date}
+            amount={wallet.amount}
+          />
         ))}
       </Card>
     </div>
